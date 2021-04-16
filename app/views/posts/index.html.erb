@@ -8,4 +8,7 @@
 <%= post.body %>
   <% end %>
 </ul>
-<%= link_to "Logout", destroy_user_session_path %>
+
+<% if user_signed_in? %> 
+    <%= current_user.email %>
+<% end %>
