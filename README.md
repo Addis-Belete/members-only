@@ -1,24 +1,39 @@
-# README
+# Member-only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project we were making a members-only app, that shows posts with the author name if the user is signed in.
 
-Things you may want to cover:
+## Built with
 
-* Ruby version
+- Ruby on Rails
+- Ruby
+- Devise
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get a local copy of the repository please run the following commands on your terminal:
 
-* Database creation
+```
+$ cd <folder>
+```
 
-* Database initialization
+```
+$ git clone git@github.com:Addis0943/members-only.git
+```
 
-* How to run the test suite
+```
+$ cd members-only
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+> Migrating the database
 
-* Deployment instructions
+```
+$ rails db:migrate
+```
 
-* ...
+## Authors
+
+- Name :Addis Belete
+- Githhub :https://github.com/Addis0943
+
+- Name :luqmanmusah
+- Githhub :https://github.com/luqmanmusah
