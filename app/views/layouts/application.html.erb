@@ -6,14 +6,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
   <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>
-   <%= link_to "Logout", new_user_registration_path %>
+<% if user_signed_in? %>
+   <%= link_to "Sign out", "/users/sign_out", :method => :delete %>
+
+<% end %>
     <%= yield %>
   </body>
 </html>
