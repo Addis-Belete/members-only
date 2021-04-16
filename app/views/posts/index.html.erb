@@ -6,11 +6,17 @@
       <%= post.title %>
     </li>
 <%= post.body %>
+<% if user_signed_in? %>
+  <% @users.each do |user| %>
+  <%= user.email %>
+  <% end %>
+<% end %>
 
 
   <% end %>
 </ul>
 
+<% if user_signed_in? %>
 
 <%= link_to "Create new post ", new_post_path %><br>
 <% else %>
