@@ -13,10 +13,7 @@
   <body>
   <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>
-<% if user_signed_in? %>
-   <%= link_to "Sign out", "/users/sign_out", :method => :delete %>
-
-<% end %>
+<%= sign_out %>
     <%= yield %>
   </body>
 </html>
