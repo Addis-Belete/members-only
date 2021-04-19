@@ -23,7 +23,7 @@ $ git clone git@github.com:Addis0943/members-only.git
 ```
 $ cd members-only
 ```
-
+```
 $ bundle install
 ,,,
 
