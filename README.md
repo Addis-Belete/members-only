@@ -25,13 +25,13 @@ $ cd members-only
 ```
 ```
 $ bundle install
-,,,
-
+```
+```
 $ yarn install --check-files
-,,,
-
-> Migrating the database
-
+```
+```
+$ Migrating the database
+```
 ```
 $ rails db:migrate
 ```
