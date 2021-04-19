@@ -6,9 +6,11 @@
       <%= post.title %>
     </li>
 <%= post.body %>
+<br>
+<strong>
+<%= author_name(post) %>
+</strong>
   <% end %>
 </ul>
-
-<% if user_signed_in? %> 
-    <%= current_user.email %>
-<% end %>
+<%= my_link_to %><br>
+<%= sign_up %>
